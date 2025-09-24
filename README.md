@@ -12,16 +12,20 @@ Designed a scalable ALU supporting N-bit operations with CPU-style flags.
 
 | Operation  |  a      |  b      | Result | Flags (Z,C,V,N) |
 |------------|---------|---------|--------|----------------|
-| ADD        | 5       | 3       | 8      | 0,0,0,0        |
-| SUB        | 9       | 9       | 0      | 1,0,0,0        |
-| AND        | 1010    |   1100  |   1000 | 0,0,0,0        |
-| OR         | 0b1010  | 0b1100  | 0b1110 | 0,0,0,0        |
-| SHIFT LEFT | 0b0001  | 1       | 0b0010 | 0,0,0,0        |
-
+| ADD        | 100       | 50       | 150      | 0,0,0,0        |
+| SUB        | 4      | 5       | 0      | 1,0,0,0        |
+| DIV        | 5      | 3      |          |                 |
+| MOD          |5       |3     |    |                  |
+| AND        | 8'b1010_1111   |   8'b1111_0000  |    |         |
+| OR         | 8'b1111_0000  | 8'b0000_1100  | 8'b1111_1100 | 0,0,0,0        |
+| SHIFT LEFT | 8'b1111_0100  | 1       | 8'b0010 | 0,0,0,0        |
+|SHIFT RIGHT | 8'b0000_1111   | 1   |  | |
+  
 
 ## Learnings
 - Parameterized design in Verilog
 - Arithmetic/logic design
+
 
 
 
