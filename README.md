@@ -1,13 +1,13 @@
 # Parameterized ALU in Verilog
 
 ## Overview
-Designed a scalable ALU supporting N-bit operations with CPU-style flags.
+Designed a scalable ALU supporting N-bit operations with flags.
 
 ## Features
 - Parameterized design (default: 8-bit).
-- Operations: Add, Sub, AND, OR, XOR, Shift Left, Shift Right.
+- Operations: Add, Sub, Modulus, division, bitwise AND, bitwise OR, Shift Left, Shift Right.
 - Flags: Zero, Carry, Overflow, Negative.
-- Verified with multiple testcases and waveforms.
+- Verified with testcases.
 ## Testcases
 
 | Operation  |  a      |  b      | Result | Flags (Z,C,V,N) |
@@ -24,6 +24,7 @@ Designed a scalable ALU supporting N-bit operations with CPU-style flags.
 ## Learnings
 - Parameterized design in Verilog
 - Arithmetic/logic design
+
 
 
 
