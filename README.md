@@ -9,10 +9,9 @@ Designed a scalable ALU supporting N-bit operations with CPU-style flags.
 - Flags: Zero, Carry, Overflow, Negative.
 - Verified with multiple testcases and waveforms.
 
-## Block Diagram
-(Add a simple diagram here)
 
 ## Learnings
 - Parameterized design in Verilog
 - Arithmetic/logic design
+
 
